@@ -113,3 +113,16 @@ function ocultarPilotos(){
     secao.classList.remove('pilotosAparecendo')    
     btnOcultar.classList.add('ocultar')
 }
+
+
+function carrosel(){
+    id++
+
+    if(id >img.length -1){
+        id = 0
+    }
+
+    imgs.style.transform = `translateX(${-id *1440}px)`
+    atualizarDescricao(id)
+}
+setInterval(carrosel,3000) 

@@ -85,8 +85,9 @@ function apareceForm(tipo){
     } else {
         document.getElementById('salvarDados').setAttribute('onclick','realizarLogin()')
         document.getElementById('salvarDados').setAttribute('value', 'Login');
-    }
-}function mostraListaPilotos(){
+}}
+
+function mostraListaPilotos(){
     let secao = document.getElementById('pilotos');
     let lista = document.getElementById('listaPilotos'); 
     let btnOcultar = document.getElementById('aparecerBtnOcultar')

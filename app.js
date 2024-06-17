@@ -126,3 +126,7 @@ function carrosel(){
     atualizarDescricao(id)
 }
 setInterval(carrosel,3000) 
+
+function atualizarDescricao(id){
+    document.getElementById('local').innerText = locais[id]
+}

@@ -105,3 +105,11 @@ function mostraListaPilotos(){
     btnOcultar.classList.remove('ocultar')
     btnOcultar.classList.add('aparecerBtnOcultar')
 }
+
+function ocultarPilotos(){
+    let secao = document.getElementById('pilotos')
+    let btnOcultar = document.getElementById('aparecerBtnOcultar')
+
+    secao.classList.remove('pilotosAparecendo')    
+    btnOcultar.classList.add('ocultar')
+}

@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+nav ul{
+    margin-top: 10px;
+    text-decoration: none;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav button{
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(31, 29, 29);
+    color:white;
+    cursor: pointer;
+}
+
+.cadastro{
+    display: none;
+}
+
+.secaoCadastroLogin{
+    display: flex;
+}
+
+.pergunta{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.pergunta a{
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-bottom: 10px;
+    
+}
+
+.ocultar{
+    display: none;
+}
+
+.aparecerBtnOcultar{
+    display: flex;
+    justify-content: space-around;
+}
+
+.pilotos{
+    display: none;
+}
+
+.pilotosAparecendo{
+    display: flex;
+}
+
+.pilotos a{
+    margin-top: 100px;
+}
+
+.imagens{
+    overflow: hidden;
+    height: 820px;
+    width: 1440px;
+    margin: 0 auto;
+}
+
+.imagens h2{
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.carrosel{
+    display: flex;
+    margin-top: 30px;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+.carrosel img{
+    height: 820px;
+    width: 1440px;
+    object-fit: cover;
+}
+
+.descricaoCircuitos{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.forms{
+    display: block;
+}
+

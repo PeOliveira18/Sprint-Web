@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina Principal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Tech Mahindra</li>
+                <button id="btnCadastro" onclick="apareceForm('cadastro')"></button>
+                <button id="btnLogin" onclick="apareceForm('login')"></button>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="cadastro">
+            <form id="forms">
+                <label for="txtUsuario"></label>
+                <input type="text" placeholder="Nome de Usuario" id="txtUsuario" name="txtUsuario">
+                <label for="txtSenha"></label>
+                <input type="password" placeholder="Senha" id="txtSenha" name="txtSenha">
+                <input type="submit" name="salvarDados" id="salvarDados" value="Salvar dados">
+            </form>
+        </div>
+        <div class="pergunta">
+            <a href = "#" onclick="mostraListaPilotos()">Clique aqui para ver o atual ranking de pilotos da Formula E </a>
+            
+
+        </div>
+        <div id="pilotos" class="pilotos">
+            <ul class="rankingPilotos" id="listaPilotos">
+            </ul>   
+            <a href="#" onclick="ocultarPilotos()" class="ocultar" id="aparecerBtnOcultar">Ocultar ranking dos pilotos</a>  
+        </div>
+        <div class="imagens">
+            <h2>Principais circuitos</h2>
+            <div class="descricaoCircuitos">
+                <h3 id="local">Circuito de Monaco - Franca</h3>
+            </div>
+            <div class="carrosel" id="imgs">
+                <img src="monaco.png" alt="Circuito de monaco">
+                <img src="berlin.webp" alt="Circuito de Berlin">
+                <img src="missano.webp" alt="Circuito de Missano">
+                <img src="portland.webp" alt="Circuito de Portland">
+                <img src="shangai.webp" alt="Circuito de Shangai">
+            </div>
+        </div>  
+    </main>
+    
+
+
+<script src="app.js"></script>
+</body>
+</html>
